@@ -5,16 +5,26 @@
 
 ## Installation
 1. Install PHP dependencies:
+   ```
    composer install
-2. Install frontend dependencies and compile assets:
+   ```
+3. Install frontend dependencies and compile assets:
+   ```
    npm install
    npm run dev
-3. Generate the application key:
+   ```
+5. Generate the application key:
+   ```
    php artisan key:generate
-4. Run migrations and seeders:
+   ```
+7. Run migrations and seeders:
+   ```
    php artisan migrate --seed
-5. Serve the application:
+   ```
+9. Serve the application:
+   ```
    php artisan serve
+   ```
 
 ## Authentication
 - User registration is handled via Laravel Breeze (Blade).
