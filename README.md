@@ -22,6 +22,7 @@
 ## Authentication
 - User registration is handled via Laravel Breeze (Blade).
 - Admin users can be created created via Tinker:
+  ```
   php artisan tinker:
    use App\Models\User;
    use Illuminate\Support\Facades\Hash;
@@ -32,6 +33,7 @@
      'password' => Hash::make('secret'),
      'is_admin' => true
    ]);
+  ```
 
 ## Policies / Security
 - Only admins can delete customers
@@ -39,5 +41,7 @@
 
 ## Seeders & Factories
 - You can populate sample data using factories:
+  ```
   php artisan tinker \App\Models\Customer::factory()->count(10)->create();
   php artisan tinker \App\Models\Order::factory()->count(20)->create();
+  ```
