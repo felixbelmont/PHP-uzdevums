@@ -4,19 +4,16 @@
 - Node.js / NPM
 
 ## Installation
-1. Clone the repository:
-   git clone <repo_url>
-   cd <repo_folder>
-2. Install PHP dependencies:
+1. Install PHP dependencies:
    composer install
-3. Install frontend dependencies and compile assets:
+2. Install frontend dependencies and compile assets:
    npm install
    npm run dev
-4. Generate the application key:
+3. Generate the application key:
    php artisan key:generate
-5. Run migrations and seeders:
+4. Run migrations and seeders:
    php artisan migrate --seed
-6. Serve the application:
+5. Serve the application:
    php artisan serve
 
 ## Authentication
